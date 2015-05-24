@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name":"Reddit All Time Button",
+    "description":"Adds an \"All Time\" button to all subreddits.",
+    "version":"1.0",
+    "content_scripts": [
+        {
+            "matches": ["http://www.reddit.com/*"],
+            "js": ["reddit_all_time_button.js"]
+        } 
+    ],
+    "permissions": [
+        "http://www.reddit.com/*"
+    ]
+}
